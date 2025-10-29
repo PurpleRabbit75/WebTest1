@@ -7,20 +7,21 @@
     <h1>Data Input</h1>
     <form action="" method="POST" id="data_submit">
         <input type="text" id="data_box" name="data_box2"><br>
-        <button type="submit" sendMessage()>Submit</button>
+        <button type="submit">Submit</button>
     </form>
 
 
-<script type="module">
-  document.getElementById('data_submit').addEventListener('submit', myFunction);
-  function myFunction(e) {
-      alert("If this were a functional app, your data would now be submitted!");
-    }
-
+  <script type="module">
+    document.getElementById('data_submit').addEventListener('submit', myFunction);
+    function myFunction(e) {
+        e.preventDefault();
+        alert("If this were a functional app, your data would now be submitted!");
+      }
   </script>
 
 
     <h1>Data Return</h1>
+
 </body>
 </html> 
 
